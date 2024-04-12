@@ -1,5 +1,10 @@
-import "./index.css"; // Import des styles globaux si nécessaire
+import React from "react";
+import ReactDOM from "react-dom";
 import App from "./App.jsx";
 
-// Vous n'avez généralement pas besoin de beaucoup de code ici
-// ViteJS s'occupe de l'initialisation de l'application et du montage de votre composant racine (App) dans le DOM
+ReactDOM.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById("root")
+);

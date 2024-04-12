@@ -1,10 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router } from "react-router-dom"; // Si vous utilisez react-router pour la navigation
+import Navbar from "./src/components/Navbar.jsx"; // Import du composant Navbar
 
-ReactDOM.render(
-    <Router>
-        <App />
-    </Router>,
-    document.getElementById("root")
-);
+function App() {
+    return (
+        <div>
+            <Navbar /> {/* Affichage de la barre de navigation */}
+        </div>
+    );
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
+export default App;

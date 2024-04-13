@@ -4,13 +4,13 @@ import React, { useEffect } from "react";
 import $ from "jquery";
 import "turn.js";
 import "../assets/styles/livremenu.css"; // Import du fichier CSS pour le menu
-import page1 from "../assets/images/page-1.wepb";
-import page2 from "../assets/images/page-2.wepb";
-import page3 from "../assets/images/page-3.wepb";
-import page4 from "../assets/images/page-4.wepb";
-import page5 from "../assets/images/page-5.wepb";
-import page6 from "../assets/images/page-6.wepb";
-import page7 from "../assets/images/page-7.wepb";
+import page1 from "../assets/images/page-1.webp";
+import page2 from "../assets/images/page-2.webp";
+import page3 from "../assets/images/page-3.webp";
+import page4 from "../assets/images/page-4.webp";
+import page5 from "../assets/images/page-5.webp";
+import page6 from "../assets/images/page-6.webp";
+import page7 from "../assets/images/page-7.webp";
 
 function Menu() {
     useEffect(() => {

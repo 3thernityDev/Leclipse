@@ -15,7 +15,7 @@ function Footer() {
                 <div className="footer-middle">
                     <h3>Contact</h3>
                     <p>
-                        <i className="fas fa-phone"></i> +33 1 23 45 67 89
+                        <i className="fas fa-phone"></i> 0262 00 20 20
                     </p>
                     <p>
                         <i className="fas fa-envelope"></i>

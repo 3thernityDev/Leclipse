@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../assets/styles/navbar.css"; // Import du fichier CSS pour la barre de navigation
+import navlogo from "../assets/images/logo.png";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ function Navbar() {
     return (
         <nav>
             <div className="logo">
-                <img src="src\assets\images\logo.png" alt="logo" />
+                <img src={navlogo} alt="logo" />
                 <h3 className="LogoName">L'éclipse</h3>
             </div>
             <div

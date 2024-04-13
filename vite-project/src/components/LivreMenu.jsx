@@ -4,6 +4,13 @@ import React, { useEffect } from "react";
 import $ from "jquery";
 import "turn.js";
 import "../assets/styles/livremenu.css"; // Import du fichier CSS pour le menu
+import page1 from "../assets/images/page-1.wepb";
+import page2 from "../assets/images/page-2.wepb";
+import page3 from "../assets/images/page-3.wepb";
+import page4 from "../assets/images/page-4.wepb";
+import page5 from "../assets/images/page-5.wepb";
+import page6 from "../assets/images/page-6.wepb";
+import page7 from "../assets/images/page-7.wepb";
 
 function Menu() {
     useEffect(() => {
@@ -48,25 +55,25 @@ function Menu() {
             <div id="flipbook">
                 {/* Insérez ici les pages de votre menu */}
                 <div className="page">
-                    <img src="src/assets/images/page-1.webp" alt="Page 1" />
+                    <img src={page1} alt="Page 1" />
                 </div>
                 <div className="page">
-                    <img src="src/assets/images/page-2.webp" alt="Page 2" />
+                    <img src={page2} alt="Page 2" />
                 </div>
                 <div className="page">
-                    <img src="src/assets/images/page-3.webp" alt="Page 3" />
+                    <img src={page3} alt="Page 3" />
                 </div>
                 <div className="page">
-                    <img src="src/assets/images/page-4.webp" alt="Page 4" />
+                    <img src={page4} alt="Page 4" />
                 </div>
                 <div className="page">
-                    <img src="src/assets/images/page-5.webp" alt="Page 5" />
+                    <img src={page5} alt="Page 5" />
                 </div>
                 <div className="page">
-                    <img src="src/assets/images/page-6.webp" alt="Page 6" />
+                    <img src={page6} alt="Page 6" />
                 </div>
                 <div className="page">
-                    <img src="src/assets/images/page-7.webp" alt="Page 7" />
+                    <img src={page7} alt="Page 7" />
                 </div>
 
                 {/* Ajoutez d'autres pages ici */}

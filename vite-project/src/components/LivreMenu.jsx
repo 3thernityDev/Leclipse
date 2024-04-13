@@ -9,8 +9,8 @@ function Menu() {
     useEffect(() => {
         // Initialisation du plugin turn.js pour créer le livre de menus
         $("#flipbook").turn({
-            width: 800,
-            height: 500,
+            width: 1000,
+            height: 800,
             autoCenter: true,
         });
     }, []);

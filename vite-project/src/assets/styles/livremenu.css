@@ -1,9 +1,10 @@
 /* menu.css */
 
 #flipbook {
-    width: 800px;
-    height: 500px;
+    width: 1000px;
+    height: 800px;
     margin: 0 auto; /* Pour centrer horizontalement le livre de menus */
+    overflow: hidden; /* Masquer le contenu dépassant */
 }
 
 .page {
@@ -53,4 +54,3 @@
 .next-button:hover {
     background-color: #ffcc00;
 }
-

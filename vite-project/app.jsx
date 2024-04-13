@@ -5,6 +5,7 @@ import Header from "./src/components/Header.jsx";
 import LivreMenu from "./src/components/LivreMenu.jsx";
 import About from "./src/components/About.jsx";
 import ContactForm from "./src/components/ContactForm.jsx";
+import Footer from "./src/components/Footer.jsx";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <LivreMenu />
             <About />
             <ContactForm />
+            <Footer />
         </div>
     );
 }

@@ -1,51 +1,82 @@
 /* navbar.css */
 
-/* Style de base pour la barre de navigation */
 nav {
-    background-color: #0f0f0f;
-    color: #fff;
-    padding: 10px; /* Augmentation de l'espace autour de la barre de navigation */
-    display: flex; /* Utilisation de Flexbox pour un positionnement flexible des éléments */
-    align-items: center; /* Alignement vertical des éléments au centre */
+    display: flex;
     justify-content: space-between;
-    border-radius: 20px;
-}
-
-/* Style du logo */
-nav img {
-    width: fit-content;
-    margin-right: 20px; /* Marge à droite pour l'espacement */
-}
-
-/* Style des liens dans la barre de navigation */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex; /* Utilisation de Flexbox pour aligner les éléments horizontalement */
-}
-
-nav ul li {
-    margin-right: 20px; /* Espacement entre les éléments de la liste */
-}
-
-nav ul li:last-child {
-    margin-right: 0; /* Supprimer la marge à droite du dernier élément de la liste */
-}
-
-nav ul li a {
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
     color: #fff;
-    text-decoration: none;
-    transition: color 0.3s; /* Transition douce de la couleur au survol */
 }
 
-nav ul li a:hover {
-    color: #ffcc00; /* Changement de couleur au survol */
+.logo img {
+    width: 40px;
+    height: auto;
 }
 
 .LogoName {
-    font-family: "Rubik Moonrocks", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.burger {
+    display: none; /* Caché sur les écrans larges */
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Styles pour le menu burger sur les écrans plus petits */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Caché sur les écrans plus petits */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #333;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block; /* Visible sur les écrans plus petits */
+    }
+
+    .line1.active {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .line2.active {
+        opacity: 0;
+    }
+
+    .line3.active {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
 }

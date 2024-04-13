@@ -27,6 +27,7 @@ function Menu() {
 
     return (
         <div>
+            <h3>Menu</h3>
             <div id="flipbook">
                 {/* Insérez ici les pages de votre menu */}
                 <div className="page">
@@ -56,7 +57,7 @@ function Menu() {
             {/* Boutons pour naviguer entre les pages */}
             <div className="button-container">
                 <button className="prev-button" onClick={prevPage}>
-                   ◀️ Précédent
+                    ◀️ Précédent
                 </button>
                 <button className="next-button" onClick={nextPage}>
                     Suivant ▶️

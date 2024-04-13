@@ -18,6 +18,7 @@ h2 {
     margin-bottom: 40px;
     display: flex;
     align-items: center;
+    flex-direction: column; /* Mettre les membres de l'équipe en colonne sur mobile */
 }
 
 .member-info {
@@ -35,6 +36,12 @@ h2 {
     color: #666;
 }
 
+.member-image {
+    width: 100%; /* Ajuster la largeur de l'image au contenu */
+    max-width: 300px; /* Limiter la largeur de l'image */
+    margin-top: 20px; /* Espacement entre l'image et les informations du membre */
+}
+
 .restaurant-description {
     margin-top: 40px;
 }
@@ -46,4 +53,22 @@ h2 {
 
 .restaurant-description p {
     color: #666;
+}
+
+/* Médias queries pour rendre la section responsive */
+
+@media screen and (max-width: 768px) {
+    .member-info,
+    .member-image {
+        padding: 0; /* Supprimer le padding sur mobile */
+        text-align: center; /* Centrer le contenu sur mobile */
+    }
+
+    .member-info p {
+        margin-bottom: 10px; /* Réduire l'espacement entre les paragraphes sur mobile */
+    }
+
+    .team-member {
+        margin-bottom: 20px; /* Réduire l'espacement entre les membres de l'équipe sur mobile */
+    }
 }

@@ -48,9 +48,21 @@ function About() {
                 <div className="restaurant-description">
                     <h3>Notre restaurant</h3>
                     <p>
-                        Une description de votre restaurant et de son concept
-                        ici. Vous pouvez inclure des détails sur le style de
-                        cuisine, l'ambiance, l'emplacement, etc.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Quaerat velit sapiente voluptas odio distinctio
+                        culpa adipisci, earum minima amet, sint mollitia quod
+                        laborum. Nulla, perferendis iste. Ullam tempora nesciunt
+                        necessitatibus quasi odio quos impedit atque error,
+                        neque sint distinctio dolorum, quia id fugiat dolorem
+                        voluptatem optio dolore repellat animi saepe voluptates.
+                        Ex, omnis animi. Ipsum nulla, consequuntur illum
+                        laudantium sit eveniet. Exercitationem harum doloremque
+                        nulla eos, voluptatem a iusto est temporibus inventore
+                        in, sequi modi accusantium similique, saepe facilis. At
+                        nobis earum numquam ipsa consectetur? Maxime, aliquid.
+                        Dolores quaerat, deleniti exercitationem ducimus
+                        quisquam et ex nesciunt. Magnam voluptates accusamus
+                        facere?
                     </p>
                 </div>
             </div>

@@ -9,10 +9,27 @@ function Menu() {
     useEffect(() => {
         // Initialisation du plugin turn.js pour créer le livre de menus
         $("#flipbook").turn({
-            width: 1000,
-            height: 800,
+            width: calculateWidth(), // Calculer la largeur initiale
+            height: calculateHeight(), // Calculer la hauteur initiale
             autoCenter: true,
         });
+
+        // Redimensionner le livre lorsque la fenêtre est redimensionnée
+        $(window).on("resize", () => {
+            const width = calculateWidth();
+            const height = calculateHeight();
+            $("#flipbook").turn("size", width, height);
+        });
+
+        // Fonction pour calculer la largeur initiale en fonction de la largeur de l'écran
+        function calculateWidth() {
+            return $(window).width() > 768 ? 1000 : $(window).width() - 40;
+        }
+
+        // Fonction pour calculer la hauteur initiale en fonction de la largeur de l'écran
+        function calculateHeight() {
+            return $(window).width() > 768 ? 800 : $(window).width() * 0.8;
+        }
     }, []);
 
     const nextPage = () => {

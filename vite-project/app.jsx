@@ -4,6 +4,7 @@ import Navbar from "./src/components/Navbar.jsx"; // Import du composant Navbar
 import Header from "./src/components/Header.jsx";
 import LivreMenu from "./src/components/LivreMenu.jsx";
 import About from "./src/components/About.jsx";
+import ContactForm from "./src/components/ContactForm.jsx";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Header />
             <LivreMenu />
             <About />
+            <ContactForm />
         </div>
     );
 }

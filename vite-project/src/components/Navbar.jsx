@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "../assets/styles/navbar.css"; // Import du fichier CSS pour la barre de navigation
 
 function Navbar() {
-    const [showMenu, setShowMenu] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
-        setShowMenu(!showMenu);
+        setIsOpen(!isOpen);
     };
 
     return (
@@ -14,25 +14,34 @@ function Navbar() {
                 <img src="src\assets\images\logo.png" alt="logo" />
                 <h3 className="LogoName">L'éclipse</h3>
             </div>
-            <ul className={showMenu ? "nav-links active" : "nav-links"}>
+            <div
+                className={`menu-toggle ${isOpen ? "open" : ""}`}
+                onClick={toggleMenu}
+            >
+                <div className="hamburger"></div>
+            </div>
+            <ul className={`nav-links ${isOpen ? "open" : ""}`}>
                 <li>
-                    <a href="/">Accueil</a>
+                    <a href="/" onClick={toggleMenu}>
+                        Accueil
+                    </a>
                 </li>
                 <li>
-                    <a href="#flipbook">Menu</a>
+                    <a href="#flipbook" onClick={toggleMenu}>
+                        Menu
+                    </a>
                 </li>
                 <li>
-                    <a href="#about">À propos</a>
+                    <a href="#about" onClick={toggleMenu}>
+                        À propos
+                    </a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact" onClick={toggleMenu}>
+                        Contact
+                    </a>
                 </li>
             </ul>
-            <div className="burger" onClick={toggleMenu}>
-                <div className={showMenu ? "line1 active" : "line1"}></div>
-                <div className={showMenu ? "line2 active" : "line2"}></div>
-                <div className={showMenu ? "line3 active" : "line3"}></div>
-            </div>
         </nav>
     );
 }

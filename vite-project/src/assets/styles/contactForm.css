@@ -21,6 +21,7 @@
 .contact-info .info h3 {
     font-size: 24px;
     margin-bottom: 15px;
+    color: #ffffff; /* Ajout de la couleur du texte */
 }
 
 .contact-info .info p {
@@ -29,7 +30,8 @@
 }
 
 form {
-    max-width: 500px;
+    max-width: 100%; /* Modifier la largeur maximale du formulaire */
+    margin-top: 20px; /* Ajouter un espacement en haut */
 }
 
 .form-group {
@@ -42,12 +44,13 @@ form {
     display: block;
     font-size: 18px;
     margin-bottom: 5px;
+    color: #ffffff; /* Ajout de la couleur du texte */
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 200%;
+    width: 100%; /* Ajuster la largeur des champs de saisie */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -56,6 +59,7 @@ textarea {
 
 textarea {
     height: 150px;
+    resize: vertical; /* Permettre le redimensionnement vertical de la zone de texte */
 }
 
 button[type="submit"] {

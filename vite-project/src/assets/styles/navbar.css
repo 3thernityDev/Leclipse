@@ -1,22 +1,51 @@
 /* navbar.css */
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
+    padding: 1rem;
 }
 
 .logo img {
-    width: 40px;
+    width: 50px; /* Ajustez selon votre logo */
     height: auto;
 }
 
-.LogoName {
-    font-size: 20px;
-    margin-left: 10px;
+.menu-toggle {
+    display: none; /* Masquer par défaut */
+    cursor: pointer;
+}
+
+.hamburger,
+.hamburger:before,
+.hamburger:after {
+    content: "";
+    display: block;
+    background-color: #333;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger:before {
+    transform: translateY(-8px);
+}
+
+.hamburger:after {
+    transform: translateY(5px);
+}
+
+.menu-toggle.open .hamburger {
+    transform: rotate(45deg);
+}
+
+.menu-toggle.open .hamburger:before {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.menu-toggle.open .hamburger:after {
+    transform: translateY(0) rotate(45deg);
 }
 
 .nav-links {
@@ -25,58 +54,49 @@ nav {
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin-right: 1rem;
 }
 
 .nav-links a {
-    color: #fff;
     text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
 }
 
-.burger {
-    display: none; /* Caché sur les écrans larges */
-    cursor: pointer;
+.nav-links a:hover {
+    color: #555;
 }
 
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px;
-    transition: all 0.3s ease;
+.LogoName {
+    font-family: "Rubik Moonrocks", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-/* Styles pour le menu burger sur les écrans plus petits */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Afficher le menu burger lorsque la largeur est inférieure à 768px */
+    }
+
     .nav-links {
-        display: none; /* Caché sur les écrans plus petits */
+        display: none; /* Masquer la liste de liens par défaut */
         flex-direction: column;
-        align-items: center;
         width: 100%;
         position: absolute;
-        top: 70px;
+        top: 100px; /* Ajustez selon votre barre de navigation */
         left: 0;
-        background-color: #333;
-        transition: all 0.5s ease;
+        background-color: #f9f9f9;
+        padding: 1rem;
+        border-top: 1px solid #ccc;
+        transition: all 0.3s ease;
     }
 
-    .nav-links.active {
-        display: flex;
+    .nav-links.open {
+        display: flex; /* Afficher la liste de liens lorsque le menu est ouvert */
     }
 
-    .burger {
-        display: block; /* Visible sur les écrans plus petits */
-    }
-
-    .line1.active {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .line2.active {
-        opacity: 0;
-    }
-
-    .line3.active {
-        transform: rotate(45deg) translate(-5px, -6px);
+    .nav-links li {
+        margin-right: 0; /* Ajustement pour la disposition verticale */
+        margin-bottom: 1rem;
     }
 }

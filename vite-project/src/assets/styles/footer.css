@@ -1,40 +1,44 @@
 /* footer.css */
 
 footer {
-    background-color: #1a1919;
-    color: #fff;
-    padding: 50px 0;
+    background-color: #333; /* Couleur de fond du footer */
+    padding: 50px 0; /* Espacement interne du footer */
+    color: #fff; /* Couleur du texte */
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permettre le passage à la ligne des éléments */
+    max-width: 1200px; /* Largeur maximale du contenu du footer */
+    margin: 0 auto; /* Centrer le contenu horizontalement */
 }
 
 .footer-left,
 .footer-middle,
 .footer-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%; /* Répartit l'espace en trois colonnes */
+    flex: 1; /* Répartir l'espace disponible de manière égale */
+    text-align: center; /* Centrer le contenu horizontalement */
 }
 
 .footer-left h3,
 .footer-middle h3,
 .footer-right h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Espacement entre les titres et les paragraphes */
 }
 
-.legal-info,
+.footer-left p,
+.footer-middle p,
+.footer-right p {
+    margin-bottom: 20px; /* Espacement entre les paragraphes */
+}
+
+.legal-info {
+    text-align: center;
+    margin-top: 20px; /* Espacement entre les informations légales et le reste du footer */
+}
+
 .copyright {
     text-align: center;
-    margin-top: 30px;
-}
-
-.legal-info p,
-.copyright p {
-    font-size: 14px;
+    margin-top: 20px; /* Espacement entre les informations de copyright et le reste du footer */
 }

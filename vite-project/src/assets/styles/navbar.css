@@ -1,10 +1,20 @@
-/* styles.css */
+/* navbar.css */
 
 /* Style de base pour la barre de navigation */
 nav {
-    background-color: #333;
+    background-color: #0f0f0f;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px; /* Augmentation de l'espace autour de la barre de navigation */
+    display: flex; /* Utilisation de Flexbox pour un positionnement flexible des éléments */
+    align-items: center; /* Alignement vertical des éléments au centre */
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+/* Style du logo */
+nav img {
+    width: fit-content;
+    margin-right: 20px; /* Marge à droite pour l'espacement */
 }
 
 /* Style des liens dans la barre de navigation */
@@ -12,18 +22,30 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex; /* Utilisation de Flexbox pour aligner les éléments horizontalement */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin-right: 20px; /* Espacement entre les éléments de la liste */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Supprimer la marge à droite du dernier élément de la liste */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s; /* Transition douce de la couleur au survol */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #ffcc00; /* Changement de couleur au survol */
+}
+
+.LogoName {
+    font-family: "Rubik Moonrocks", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px
 }

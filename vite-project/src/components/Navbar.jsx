@@ -4,6 +4,10 @@ import "../assets/styles/navbar.css"; // Import du fichier CSS pour la barre de 
 function Navbar() {
     return (
         <nav>
+            <div className="logo">
+                <img src="src\assets\images\logo.png" alt="logo" />
+                <h3 className="LogoName">L'éclipse</h3>
+            </div>
             <ul>
                 <li>
                     <a href="/">Accueil</a>

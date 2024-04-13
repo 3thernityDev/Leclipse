@@ -1,0 +1,89 @@
+/* header.css */
+
+/* Style de base pour le header */
+header {
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Style du contenu du header */
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.header-content img {
+    max-width: 100%;
+    border-radius: 10px; /* Ajout d'un arrondi aux coins de l'image */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ajout d'une ombre douce */
+}
+
+.reservation-button {
+    position: relative; /* Position relative pour positionner le bouton */
+    display: inline-block;
+}
+
+.reservation-button button {
+    position: absolute; /* Position absolue pour superposer le bouton sur l'image */
+    bottom: 20px; /* Positionner le bouton en bas de l'image */
+    right: 20px; /* Positionner le bouton sur le côté droit de l'image */
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reservation-button button:hover {
+    background-color: #ffcc00;
+}
+
+
+/* header.css */
+
+.menu-link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    animation: bounce 2s infinite alternate; /* Animation de rebond */
+}
+
+.menu-link i {
+    margin-left: 5px;
+}
+
+/* Animation de rebond */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

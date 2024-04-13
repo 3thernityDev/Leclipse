@@ -48,21 +48,17 @@ function About() {
                 <div className="restaurant-description">
                     <h3>Notre restaurant</h3>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Quaerat velit sapiente voluptas odio distinctio
-                        culpa adipisci, earum minima amet, sint mollitia quod
-                        laborum. Nulla, perferendis iste. Ullam tempora nesciunt
-                        necessitatibus quasi odio quos impedit atque error,
-                        neque sint distinctio dolorum, quia id fugiat dolorem
-                        voluptatem optio dolore repellat animi saepe voluptates.
-                        Ex, omnis animi. Ipsum nulla, consequuntur illum
-                        laudantium sit eveniet. Exercitationem harum doloremque
-                        nulla eos, voluptatem a iusto est temporibus inventore
-                        in, sequi modi accusantium similique, saepe facilis. At
-                        nobis earum numquam ipsa consectetur? Maxime, aliquid.
-                        Dolores quaerat, deleniti exercitationem ducimus
-                        quisquam et ex nesciunt. Magnam voluptates accusamus
-                        facere?
+                        Notre restaurant, "L'Éclipse", offre une expérience
+                        inédite centrée sur le thème de l'astronomie, plongeant
+                        nos clients au cœur de la galaxie pour une expérience
+                        culinaire unique. Étendu sur 205m², avec une vue
+                        panoramique sur la mer, notre établissement vous
+                        transporte au large avec une carte axée sur une cuisine
+                        internationale bistrot haut de gamme et raffinée,
+                        principalement élaborée à partir de produits locaux.
+                        Cette carte séduira les amateurs de cuisine, les couples
+                        en quête d'une expérience romantique, les familles ainsi
+                        que les touristes locaux et internationaux.
                     </p>
                 </div>
             </div>

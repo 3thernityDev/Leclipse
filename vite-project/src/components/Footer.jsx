@@ -8,8 +8,8 @@ function Footer() {
                 <div className="footer-left">
                     <h3>Nous trouver</h3>
                     <p>
-                        <i className="fas fa-map-marker-alt"></i> 123 Rue de
-                        l'Éclipse, 75000 Paris
+                        <i className="fas fa-map-marker-alt"></i> 48 Rue Amiral
+                        Lacaze, Saint-Pierre 97410, La Réunion
                     </p>
                 </div>
                 <div className="footer-middle">

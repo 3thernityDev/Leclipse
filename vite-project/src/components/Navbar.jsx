@@ -13,13 +13,13 @@ function Navbar() {
                     <a href="/">Accueil</a>
                 </li>
                 <li>
-                    <a href="/menu">Menu</a>
+                    <a href="#flipbook">Menu</a>
                 </li>
                 <li>
-                    <a href="/about">À propos</a>
+                    <a href="#about">À propos</a>
                 </li>
                 <li>
-                    <a href="/contact">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
